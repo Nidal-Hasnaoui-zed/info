@@ -1,0 +1,77 @@
+ body {
+      background: #05080f;
+      color: #e8e8e8;
+      font-family: "Segoe UI", sans-serif;
+      line-height: 1.7;
+    }
+
+    .section-title {
+      font-size: 2.2rem;
+      font-weight: 600;
+      margin-bottom: 25px;
+      color: #8cd0ff;
+    }
+
+    .glass-box {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 25px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      margin-bottom: 30px;
+    }
+
+    /* --- FIXED SCHEMA --- */
+    .schema-box {
+      text-align: center;
+      padding: 40px 10px;
+    }
+
+    .schema-item {
+      display: inline-block;
+      padding: 18px 28px;
+      border-radius: 18px;
+      margin: 12px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      font-weight: 600;
+      min-width: 150px;
+      transition: 0.3s;
+    }
+
+    .schema-item:hover {
+      transform: scale(1.05);
+      background: rgba(80, 180, 255, 0.1);
+    }
+
+    .arrow {
+      font-size: 2rem;
+      margin: 0 10px;
+      color: #7cc8ff;
+    }
+
+    /* --- FIXED SIDEBAR --- */
+    #sidebar {
+      position: fixed;
+      top: 50%;
+      right: 25px;
+      transform: translateY(-50%);
+      padding: 15px 18px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+    }
+
+    #sidebar a {
+      display: block;
+      margin: 8px 0;
+      color: #7cc8ff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    #sidebar a:hover {
+      text-decoration: underline;
+    }

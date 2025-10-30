@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Architecture de von Neumann</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images/webimg.png" type="image/x-icon">
+</head>
+<body>
+
+  <div id="sidebar">
+    <a href="#intro">Introduction</a>
+    <a href="#history">Histoire</a>
+    <a href="#schema">Schéma</a>
+    <a href="#conclusion">Conclusion</a>
+  </div>
+
+  <div class="container py-5">
+
+    <!-- INTRODUCTION -->
+    <section id="intro" class="glass-box">
+      <h2 class="section-title">Introduction</h2>
+      <p>Un système informatique est composé de deux parties principales : le <strong>matériel (hardware)</strong> et le <strong>logiciel (software)</strong>. Le matériel regroupe les composants physiques, tandis que les logiciels représentent les programmes qui permettent l'exécution des tâches.</p>
+    </section>
+
+    <!-- HISTOIRE -->
+    <section id="history" class="glass-box">
+      <h2 class="section-title">Histoire du système informatique</h2>
+      <p>Depuis les premières machines à calculer du XIXᵉ siècle jusqu'aux ordinateurs modernes, l'informatique a connu une évolution rapide et impressionnante.</p>
+      <ul>
+        <li><strong>1801 :</strong> Métier Jacquard.</li>
+        <li><strong>1837 :</strong> Machine analytique (Babbage & Ada Lovelace).</li>
+        <li><strong>1945 :</strong> ENIAC – premier ordinateur électronique.</li>
+        <li><strong>1971 :</strong> Premier microprocesseur Intel 4004.</li>
+        <li><strong>Aujourd'hui :</strong> Smartphones, IA, cloud computing.</li>
+      </ul>
+    </section>
+
+    <!-- MEMOIRE -->
+    <section id="memoire" class="glass-box">
+      <h2 class="section-title">Mémoire</h2>
+      <p>La mémoire stocke les données et les instructions du programme. Elle permet au processeur d'accéder rapidement aux informations nécessaires.</p>
+    </section>
+
+    <!-- UAL -->
+    <section id="ual" class="glass-box">
+      <h2 class="section-title">UAL</h2>
+      <p>L'Unité Arithmétique et Logique (UAL) effectue les opérations mathématiques et logiques. Elle exécute les calculs demandés par le programme.</p>
+    </section>
+
+    <!-- ENTREE / SORTIE -->
+    <section id="io" class="glass-box">
+      <h2 class="section-title">Entrée / Sortie</h2>
+      <p>Les périphériques d'entrée et de sortie permettent à l'utilisateur d'interagir avec l'ordinateur : clavier, écran, souris, imprimante, etc.</p>
+    </section>
+
+    <!-- SCHEMA -->
+    <section id="schema" class="glass-box schema-box">
+      <h2 class="section-title">Architecture de von Neumann — Schéma</h2>
+
+      <div class="schema-item">Entrée</div>
+      <span class="arrow">→</span>
+      <div class="schema-item">Unité de Contrôle + UAL</div>
+      <span class="arrow">→</span>
+      <div class="schema-item">Mémoire</div>
+      <span class="arrow">→</span>
+      <div class="schema-item">Sortie</div>
+
+      <p class="mt-4">Un seul système de mémoire contient les données <strong>et</strong> les instructions.</p>
+    </section>
+
+    <!-- CONCLUSION -->
+    <section id="conclusion" class="glass-box">
+      <h2 class="section-title">Conclusion</h2>
+      <p>L'architecture de von Neumann reste la base de la majorité des ordinateurs actuels. Elle a introduit une structure simple, efficace et toujours utilisée dans la conception des systèmes modernes.</p>
+    </section>
+
+  </div>
+
+</body>
+</html>
