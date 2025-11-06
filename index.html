@@ -10,56 +10,138 @@
 </head>
 <body>
 
+  <!-- PAGE D’ACCUEIL -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center text-center">
+    <div class="hero-content">
+      <h1>Architecture de <span>von Neumann</span></h1>
+      <p>Découvrez le modèle fondateur de l’informatique moderne</p>
+      <button id="enter-btn" class="btn btn-primary">Explorer</button>
+    </div>
+  </section>
+
+  <!-- SIDEBAR -->
   <div id="sidebar">
     <a href="#intro">Introduction</a>
     <a href="#history">Histoire</a>
+    <a href="#memoire">Mémoire</a>
+    <a href="#ual">UAL</a>
+    <a href="#io">Entrée / Sortie</a>
     <a href="#schema">Schéma</a>
     <a href="#conclusion">Conclusion</a>
   </div>
 
-  <div class="container py-5">
+  <!-- CONTENU PRINCIPAL -->
+  <div id="main-content" class="container py-5">
 
     <!-- INTRODUCTION -->
     <section id="intro" class="glass-box">
       <h2 class="section-title">Introduction</h2>
-      <p>Un système informatique est composé de deux parties principales : le <strong>matériel (hardware)</strong> et le <strong>logiciel (software)</strong>. Le matériel regroupe les composants physiques, tandis que les logiciels représentent les programmes qui permettent l'exécution des tâches.</p>
+      <p>
+        L’architecture de von Neumann est la base de la majorité des ordinateurs actuels. Elle repose sur une idée simple mais révolutionnaire : 
+        séparer les différents éléments d’un ordinateur en unités spécialisées tout en les reliant à travers une mémoire commune.
+      </p>
+      <p>
+        Un système informatique est constitué de deux parties principales :
+      </p>
+      <ul>
+        <li><strong>Le matériel (hardware)</strong> — les composants physiques : processeur, mémoire, clavier, écran, disque dur, etc.</li>
+        <li><strong>Le logiciel (software)</strong> — les programmes et instructions qui contrôlent le matériel pour accomplir des tâches précises.</li>
+      </ul>
+      <p>
+        Dans cette architecture, toutes les instructions (le code) et les données sont stockées dans une mémoire unique. Cette organisation a permis de simplifier la conception des ordinateurs et d’ouvrir la voie à la programmation moderne.
+      </p>
     </section>
 
     <!-- HISTOIRE -->
     <section id="history" class="glass-box">
-      <h2 class="section-title">Histoire du système informatique</h2>
-      <p>Depuis les premières machines à calculer du XIXᵉ siècle jusqu'aux ordinateurs modernes, l'informatique a connu une évolution rapide et impressionnante.</p>
+      <h2 class="section-title">Histoire et contexte de l’architecture</h2>
+      <p>
+        Avant von Neumann, les premières machines étaient conçues pour exécuter une seule tâche précise. Par exemple, les machines de calcul 
+        du XIXᵉ siècle pouvaient résoudre des équations ou imprimer des motifs, mais elles ne pouvaient pas être reprogrammées facilement.
+      </p>
+      <p>
+        En 1945, le mathématicien <strong>John von Neumann</strong> rédige un rapport intitulé 
+        <em>“First Draft of a Report on the EDVAC”</em>. Dans ce document, il décrit une architecture capable d’exécuter différents programmes sans 
+        avoir à modifier le matériel. C’est la naissance du concept d’ordinateur <strong>à programme enregistré</strong>.
+      </p>
+      <h5>Quelques étapes clés :</h5>
       <ul>
-        <li><strong>1801 :</strong> Métier Jacquard.</li>
-        <li><strong>1837 :</strong> Machine analytique (Babbage & Ada Lovelace).</li>
-        <li><strong>1945 :</strong> ENIAC – premier ordinateur électronique.</li>
-        <li><strong>1971 :</strong> Premier microprocesseur Intel 4004.</li>
-        <li><strong>Aujourd'hui :</strong> Smartphones, IA, cloud computing.</li>
+        <li><strong>1801 :</strong> Le métier à tisser de Jacquard — première utilisation de cartes perforées pour automatiser des motifs.</li>
+        <li><strong>1837 :</strong> Charles Babbage et Ada Lovelace conçoivent la “machine analytique”, ancêtre théorique de l’ordinateur.</li>
+        <li><strong>1945 :</strong> Construction de l’ENIAC, premier ordinateur électronique, utilisant des tubes à vide.</li>
+        <li><strong>1949 :</strong> Premier ordinateur basé sur l’architecture de von Neumann : l’EDSAC (Cambridge, UK).</li>
+        <li><strong>1971 :</strong> Intel lance le premier microprocesseur (Intel 4004), qui reprend le même principe.</li>
+        <li><strong>Aujourd’hui :</strong> Tous nos ordinateurs, smartphones et serveurs utilisent cette architecture de base.</li>
       </ul>
     </section>
 
     <!-- MEMOIRE -->
     <section id="memoire" class="glass-box">
-      <h2 class="section-title">Mémoire</h2>
-      <p>La mémoire stocke les données et les instructions du programme. Elle permet au processeur d'accéder rapidement aux informations nécessaires.</p>
+      <h2 class="section-title">La mémoire</h2>
+      <p>
+        Dans l’architecture de von Neumann, la <strong>mémoire</strong> joue un rôle central. Elle contient à la fois :
+      </p>
+      <ul>
+        <li>Les <strong>données</strong> que le programme doit manipuler.</li>
+        <li>Les <strong>instructions</strong> qui indiquent au processeur quoi faire.</li>
+      </ul>
+      <p>
+        Cela signifie qu’un même espace mémoire contient le code et les informations. Cette approche permet au processeur de lire et d’exécuter
+        les instructions directement depuis la mémoire.
+      </p>
+      <p>
+        On distingue généralement plusieurs types de mémoire :
+      </p>
+      <ul>
+        <li><strong>La mémoire vive (RAM)</strong> : rapide, temporaire, utilisée pendant l’exécution du programme.</li>
+        <li><strong>La mémoire morte (ROM)</strong> : contient des données permanentes (comme le BIOS).</li>
+        <li><strong>La mémoire de masse</strong> : disques durs, SSD, clés USB, où sont stockés les fichiers à long terme.</li>
+      </ul>
     </section>
 
     <!-- UAL -->
     <section id="ual" class="glass-box">
-      <h2 class="section-title">UAL</h2>
-      <p>L'Unité Arithmétique et Logique (UAL) effectue les opérations mathématiques et logiques. Elle exécute les calculs demandés par le programme.</p>
+      <h2 class="section-title">L’UAL — Unité Arithmétique et Logique</h2>
+      <p>
+        L’<strong>Unité Arithmétique et Logique (UAL)</strong> est le cœur du calcul dans un ordinateur. C’est elle qui exécute toutes les opérations
+        mathématiques et logiques nécessaires :
+      </p>
+      <ul>
+        <li>Addition, soustraction, multiplication, division.</li>
+        <li>Comparaisons (égal, supérieur, inférieur, etc.).</li>
+        <li>Opérations logiques : ET, OU, NON, XOR, etc.</li>
+      </ul>
+      <p>
+        L’UAL travaille sous la direction de l’<strong>unité de contrôle</strong>, qui lui indique quelles opérations exécuter et sur quelles données.
+      </p>
+      <p>
+        Par exemple : si une instruction dit “ajoute A et B”, l’unité de contrôle envoie cette commande à l’UAL, qui effectue le calcul et renvoie
+        le résultat vers la mémoire ou un registre temporaire.
+      </p>
     </section>
 
     <!-- ENTREE / SORTIE -->
     <section id="io" class="glass-box">
-      <h2 class="section-title">Entrée / Sortie</h2>
-      <p>Les périphériques d'entrée et de sortie permettent à l'utilisateur d'interagir avec l'ordinateur : clavier, écran, souris, imprimante, etc.</p>
+      <h2 class="section-title">Les dispositifs d’entrée et de sortie</h2>
+      <p>
+        Les périphériques d’<strong>entrée</strong> et de <strong>sortie</strong> servent de lien entre l’utilisateur et la machine.
+      </p>
+      <ul>
+        <li><strong>Entrée :</strong> clavier, souris, scanner, micro, caméra, capteurs, etc.</li>
+        <li><strong>Sortie :</strong> écran, imprimante, haut-parleurs, voyants, etc.</li>
+      </ul>
+      <p>
+        Ces éléments permettent à l’ordinateur de recevoir des informations (entrée) et de restituer des résultats (sortie).  
+        Par exemple, lorsque tu tapes un texte, les touches envoient des signaux d’entrée, et l’écran affiche le résultat en sortie.
+      </p>
+      <p>
+        Dans les systèmes modernes, ces échanges passent souvent par des <strong>bus de communication</strong> qui relient le processeur, la mémoire et les périphériques.
+      </p>
     </section>
 
     <!-- SCHEMA -->
     <section id="schema" class="glass-box schema-box">
-      <h2 class="section-title">Architecture de von Neumann — Schéma</h2>
-
+      <h2 class="section-title">Schéma de l’architecture de von Neumann</h2>
       <div class="schema-item">Entrée</div>
       <span class="arrow">→</span>
       <div class="schema-item">Unité de Contrôle + UAL</div>
@@ -68,16 +150,52 @@
       <span class="arrow">→</span>
       <div class="schema-item">Sortie</div>
 
-      <p class="mt-4">Un seul système de mémoire contient les données <strong>et</strong> les instructions.</p>
+      <p class="mt-4">
+        Le schéma de von Neumann montre la communication constante entre les trois unités principales :  
+        <strong>le processeur (UAL + Unité de Contrôle)</strong>, <strong>la mémoire</strong> et <strong>les périphériques d’entrée/sortie</strong>.
+      </p>
+      <p>
+        Toutes ces unités sont reliées par un ensemble de lignes appelées <strong>bus</strong> :
+      </p>
+      <ul>
+        <li><strong>Bus de données</strong> : transporte les informations à traiter.</li>
+        <li><strong>Bus d’adresses</strong> : indique où aller chercher les données en mémoire.</li>
+        <li><strong>Bus de contrôle</strong> : coordonne les échanges entre les composants.</li>
+      </ul>
     </section>
 
     <!-- CONCLUSION -->
     <section id="conclusion" class="glass-box">
       <h2 class="section-title">Conclusion</h2>
-      <p>L'architecture de von Neumann reste la base de la majorité des ordinateurs actuels. Elle a introduit une structure simple, efficace et toujours utilisée dans la conception des systèmes modernes.</p>
+      <p>
+        L’architecture de von Neumann a marqué un tournant dans l’histoire de l’informatique.  
+        En définissant une structure claire — mémoire unique, unité de traitement et périphériques d’E/S — elle a permis la conception
+        d’ordinateurs universels capables d’exécuter n’importe quel programme.
+      </p>
+      <p>
+        Aujourd’hui encore, malgré l’apparition d’architectures plus avancées (comme Harvard ou les processeurs multicœurs), 
+        le modèle de von Neumann reste le fondement de la logique informatique.  
+        Comprendre cette architecture, c’est comprendre le cœur du fonctionnement de nos ordinateurs modernes.
+      </p>
     </section>
 
   </div>
 
+  <script>
+    const btn = document.getElementById('enter-btn');
+    const hero = document.getElementById('hero');
+    const main = document.getElementById('main-content');
+
+    btn.addEventListener('click', () => {
+      hero.classList.add('fade-out');
+      setTimeout(() => {
+        hero.style.display = 'none';
+        main.style.display = 'block';
+        window.scrollTo(0, 0);
+      }, 1000);
+    });
+  </script>
+
 </body>
 </html>
+
